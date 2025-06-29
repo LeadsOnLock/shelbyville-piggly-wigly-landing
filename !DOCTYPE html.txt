@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piggly Wiggly Shelbyville - Your Local Grocery Store</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Social Icons (optional, can be replaced with SVG/text) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8F8F8; /* A very light gray, close to white */
+            color: #000000; /* Default text black */
+        }
+        /* Official Piggly Wiggly Brand Colors */
+        .bg-piggly-red { background-color: #EC1C2A; }
+        .text-piggly-red { color: #EC1C2A; }
+        .border-piggly-red { border-color: #EC1C2A; }
+        .bg-piggly-black { background-color: #000000; }
+        .text-piggly-black { color: #000000; }
+        .bg-piggly-white { background-color: #FFFFFF; }
+        .text-piggly-white { color: #FFFFFF; }
+
+        /* Custom logo styling to evoke brand feel */
+        .piggly-logo-text {
+            font-family: 'Inter', sans-serif;
+            font-weight: 800; /* Extra bold */
+            color: #EC1C2A; /* Piggly Wiggly Red */
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        .piggly-logo-text span {
+            color: #000000; /* Black for contrast */
+        }
+        /* Hero section specific styling for background image and overlay */
+        .hero-background {
+            background-image: url('https://placehold.co/1200x600/EC1C2A/FFFFFF'); /* Placeholder without text */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header Section -->
+    <header class="bg-piggly-white shadow-md py-4">
+        <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center">
+            <!-- Piggly Wiggly Logo -->
+            <a href="#" class="flex items-center space-x-2 mb-4 sm:mb-0">
+                <span class="text-4xl piggly-logo-text">Piggly <span class="text-black">Wiggly</span></span>
+            </a>
+            <!-- Call to Action Button -->
+            <a href="#weekly-ads-preview" class="bg-piggly-red text-piggly-white hover:opacity-90 px-8 py-3 rounded-full font-bold text-lg shadow-lg transition transform hover:-translate-y-1">
+                View Weekly Ad
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background py-20 px-4 text-center">
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="container mx-auto relative z-10 text-piggly-white">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4">
+                Welcome to Shelbyville's Local Piggly Wiggly!
+            </h1>
+            <p class="text-lg sm:text-xl max-w-3xl mx-auto mb-8">
+                Proudly serving our community with fresh food, friendly faces, and Southern charm.
+            </p>
+        </div>
+    </section>
+
+    <!-- Store Info Section -->
+    <section id="store-info" class="bg-piggly-white py-16 px-4">
+        <div class="container mx-auto text-center max-w-2xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-piggly-red mb-8">
+                Visit Our Shelbyville Store
+            </h2>
+            <div class="bg-gray-100 p-8 rounded-xl shadow-lg border-l-4 border-piggly-red">
+                <p class="text-xl font-semibold mb-2">Address:</p>
+                <p class="text-lg text-black mb-4">123 Main Street, Shelbyville, TN 37160</p>
+                <p class="text-xl font-semibold mb-2">Store Hours:</p>
+                <p class="text-lg text-black mb-6">Mon–Sun: 7am – 9pm</p>
+                <a href="https://www.google.com/maps/dir/?api=1&destination=123+Main+Street,+Shelbyville,+TN+37160" target="_blank" class="bg-piggly-black text-piggly-white hover:bg-gray-700 px-8 py-3 rounded-full font-bold text-lg shadow-md transition transform hover:-translate-y-1">
+                    Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Weekly Ads Preview Section -->
+    <section id="weekly-ads-preview" class="bg-gray-100 py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-piggly-red mb-8">
+                Current Weekly Ads
+            </h2>
+            <p class="text-lg text-black mb-10 max-w-3xl mx-auto">
+                Check out our fantastic deals on fresh produce, quality meats, and everyday essentials!
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-10">
+                <!-- Placeholder Ad Thumbnail 1 -->
+                <div class="bg-piggly-white p-4 rounded-lg shadow-md transform transition hover:scale-105 duration-300">
+                    <img src="https://placehold.co/300x200/EC1C2A/FFFFFF" alt="Weekly Ad Preview 1" class="w-full h-auto rounded-md mb-4">
+                    <p class="text-md font-semibold text-black">Produce Savings!</p>
+                </div>
+                <!-- Placeholder Ad Thumbnail 2 -->
+                <div class="bg-piggly-white p-4 rounded-lg shadow-md transform transition hover:scale-105 duration-300">
+                    <img src="https://placehold.co/300x200/EC1C2A/FFFFFF" alt="Weekly Ad Preview 2" class="w-full h-auto rounded-md mb-4">
+                    <p class="text-md font-semibold text-black">Meat Specials!</p>
+                </div>
+                <!-- Placeholder Ad Thumbnail 3 -->
+                <div class="bg-piggly-white p-4 rounded-lg shadow-md transform transition hover:scale-105 duration-300">
+                    <img src="https://placehold.co/300x200/EC1C2A/FFFFFF" alt="Weekly Ad Preview 3" class="w-full h-auto rounded-md mb-4">
+                    <p class="text-md font-semibold text-black">Dairy & Deli Deals!</p>
+                </div>
+                <!-- Placeholder Ad Thumbnail 4 -->
+                <div class="bg-piggly-white p-4 rounded-lg shadow-md transform transition hover:scale-105 duration-300">
+                    <img src="https://placehold.co/300x200/EC1C2A/FFFFFF" alt="Weekly Ad Preview 4" class="w-full h-auto rounded-md mb-4">
+                    <p class="text-md font-semibold text-black">Pantry Staples!</p>
+                </div>
+            </div>
+            <a href="#" class="bg-piggly-black text-piggly-white hover:bg-gray-700 px-10 py-4 rounded-full font-bold text-lg shadow-md transition transform hover:-translate-y-1">
+                See Full Ad
+            </a>
+        </div>
+    </section>
+
+    <!-- Recipe Generator Section - New Feature with Gemini API -->
+    <section id="recipe-generator" class="py-16 px-4 bg-white">
+        <div class="container mx-auto text-center max-w-3xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-piggly-red mb-8">
+                ✨ Get Recipe Ideas with Gemini AI! ✨
+            </h2>
+            <p class="text-lg text-black mb-6">
+                Have a few ingredients but don't know what to cook? Enter them below and let our AI suggest a delicious recipe for you!
+            </p>
+            <div class="flex flex-col items-center space-y-4">
+                <input
+                    type="text"
+                    id="ingredientsInput"
+                    placeholder="e.g., chicken, rice, broccoli, soy sauce"
+                    class="w-full p-4 border border-gray-300 rounded-lg shadow-sm focus:ring-piggly-red focus:border-piggly-red text-lg text-black"
+                >
+                <button
+                    id="generateRecipeBtn"
+                    class="bg-piggly-red text-piggly-white hover:opacity-90 px-8 py-3 rounded-full font-bold text-lg shadow-md transition transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-piggly-red focus:ring-opacity-75"
+                >
+                    Suggest a Recipe!
+                </button>
+                <div id="loadingIndicator" class="hidden mt-4 text-piggly-red font-semibold">
+                    Generating your recipe...
+                </div>
+                <div id="recipeOutput" class="mt-8 p-6 bg-gray-50 border border-gray-200 rounded-xl text-left text-black leading-relaxed min-h-[100px] shadow-inner w-full">
+                    <p class="text-gray-500 italic">Your delicious recipe will appear here!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-piggly-black text-piggly-white py-8 px-4">
+        <div class="container mx-auto text-center sm:text-left grid grid-cols-1 sm:grid-cols-3 gap-8">
+            <!-- Contact Info -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p class="text-sm">Piggly Wiggly Shelbyville</p>
+                <p class="text-sm">123 Main Street</p>
+                <p class="text-sm">Shelbyville, TN 37160</p>
+                <p class="text-sm mt-2">Phone: (931) 555-1234</p>
+                <p class="text-sm">Email: info@shelbyvillepigglywiggly.com</p>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="flex flex-col items-center sm:items-start">
+                <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-piggly-white hover:text-piggly-red transition duration-300"><i class="fab fa-facebook-square text-3xl"></i></a>
+                    <a href="#" class="text-piggly-white hover:text-piggly-red transition duration-300"><i class="fab fa-instagram-square text-3xl"></i></a>
+                    <!-- Add more icons if needed -->
+                </div>
+            </div>
+
+            <!-- Newsletter Signup Form -->
+            <div>
+                <h3 class="text-xl font-bold mb-4">Stay Updated!</h3>
+                <p class="text-sm mb-4">Sign up for our newsletter to get the latest deals and news.</p>
+                <form class="flex flex-col sm:flex-row gap-2">
+                    <input type="email" placeholder="Your Email" class="p-3 rounded-lg flex-grow text-black focus:outline-none focus:ring-2 focus:ring-piggly-red">
+                    <button type="submit" class="bg-piggly-red text-piggly-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition duration-300">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="mt-8 pt-4 border-t border-gray-700 text-center text-xs">
+            <p>&copy; 2025 Piggly Wiggly Shelbyville. All rights reserved.</p>
+            <p class="mt-2">
+                <a href="#" class="text-gray-400 hover:text-piggly-red mx-2">Privacy Policy</a> |
+                <a href="#" class="text-gray-400 hover:text-piggly-red mx-2">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('generateRecipeBtn').addEventListener('click', async () => {
+            const ingredientsInput = document.getElementById('ingredientsInput');
+            const recipeOutput = document.getElementById('recipeOutput');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+            const ingredients = ingredientsInput.value.trim();
+
+            if (!ingredients) {
+                recipeOutput.innerHTML = '<p class="text-red-500">Please enter some ingredients!</p>';
+                return;
+            }
+
+            loadingIndicator.classList.remove('hidden');
+            recipeOutput.innerHTML = ''; // Clear previous output
+
+            try {
+                let chatHistory = [];
+                const prompt = `Generate a simple and delicious recipe using the following ingredients: ${ingredients}. Please provide a recipe name, a short list of ingredients, and step-by-step instructions. Format it clearly for easy reading.`;
+                chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                const payload = { contents: chatHistory };
+                const apiKey = ""; // Leave as-is; Canvas will provide this.
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`API error: ${response.status} ${response.statusText}`);
+                }
+
+                const result = await response.json();
+                console.log(result); // Log the full result for debugging
+
+                if (result.candidates && result.candidates.length > 0 &&
+                    result.candidates[0].content && result.candidates[0].content.parts &&
+                    result.candidates[0].content.parts.length > 0) {
+                    const text = result.candidates[0].content.parts[0].text;
+                    recipeOutput.innerHTML = `<pre class="whitespace-pre-wrap text-gray-800">${text}</pre>`; // Use pre-wrap to respect LLM formatting
+                } else {
+                    recipeOutput.innerHTML = '<p class="text-red-500">Could not generate a recipe. Please try again with different ingredients.</p>';
+                    console.error("Unexpected API response structure:", result);
+                }
+            } catch (error) {
+                recipeOutput.innerHTML = `<p class="text-red-500">Error generating recipe: ${error.message}. Please try again.</p>`;
+                console.error("Fetch error:", error);
+            } finally {
+                loadingIndicator.classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
+
